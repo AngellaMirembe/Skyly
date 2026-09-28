@@ -14,3 +14,29 @@ body {
   margin: 0 auto;
   box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
 }
+
+header {
+  border-bottom: 2px solid #f9f7fe;
+  padding:  0 0 30px 0;
+}
+
+.search-form-input {
+  background-color: #f9f7fe;
+  border: none;
+  padding: 15px 10px;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  width: 70%;
+  margin-right: -5px;
+  font-size: medium;
+}
+
+.search-button {
+  border: none;
+  padding: 15px 10px;
+  background-color: #9d3dd4;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  color: white;
+  font-size: medium;
+}
