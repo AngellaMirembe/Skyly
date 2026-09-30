@@ -29,6 +29,12 @@ header {
   width: 70%;
   margin-right: -5px;
   font-size: medium;
+  outline: none;
+}
+
+.search-form-input:hover {
+ border: 1px solid #9d3dd4;
+ padding: 14.3px 9px;
 }
 
 .search-button {
