@@ -9,9 +9,6 @@ function refreshWeather(response) {
   let date = new Date(response.data.time * 1000);
   let icon = document.querySelector("#icon");
 
-  icon.innerHTML = `<img class="weather-app-icon" src="${response.data.condition.icon_url}
-            " alt="Weather Icon" id="weather-icon" />`
-
   console.log(response.data.condition.icon_url);
 
   cityElement.innerHTML = response.data.city;
@@ -20,6 +17,7 @@ function refreshWeather(response) {
   humidityElement.innerHTML = `${response.data.temperature.humidity}%`;
   windElement.innerHTML = `${response.data.wind.speed} km/h`;
   timeElement.innerHTML = formatDate(date);
+  icon.innerHTML = `<img class="weather-app-icon" src="${response.data.condition.icon_url}" alt="Weather Icon" id="weather-icon" />`
 }
 
 function formatDate(date) {
