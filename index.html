@@ -8,46 +8,55 @@
   <link rel="icon" type="image/webp" href="weather-icon.webp">
   <link rel="stylesheet" href="src/index.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-<script src="https://cdn.jsdelivr.net/npm/axios@1.13.2/dist/axios.min.js"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/axios@1.13.2/dist/axios.min.js"></script>
 </head>
 
 <body>
   <div class="container">
 
-  <header>
-    <h1>Skyly</h1>
-    <h3>Know Your Sky</h3>
+    <header>
+      <h1>Skyly</h1>
+      <h3>Know Your Sky</h3>
 
-    <form class="search-form" id="search-form">
-      <input type="search" placeholder="Enter city name....." class="search-form-input" required id="search-form-input"/>
-      <input type="submit" value="Search" class="search-button"/>
-    </form>
-  </header>
+      <form class="search-form" id="search-form">
+        <input type="search" placeholder="Enter city name....." class="search-form-input" required
+          id="search-form-input" />
+        <input type="submit" value="Search" class="search-button" />
+      </form>
+    </header>
 
-  <main>
-    <div class="weather-app-data">
-    <div>
-      <h2 class="weather-app-city" id="weather-app-city">Kampala</h2>
+    <main>
+      <div class="weather-app-data">
+        <div>
+          <h2 class="weather-app-city" id="weather-app-city">Kampala</h2>
 
-      <p class="weather-app-details"> <span id="time">Tuesday 14:49</span>, <span id="description"> scattered clouds</span> <br>
-        Humidity: <strong><span id="humidity">65%</span></strong></span> Wind: <strong><span id="wind">10 km/h</span></strong></p>
-    </div>
-    <div class="weather-app-temperature-container">
-      <div class="weather-app-icon">🌤️</div>
-      <div class="weather-app-temperature-value" id="temperature">12</div>
-      <div class="weather-app-unit">&deg;C</div>
-      
-    </div>
-    </div>
-  </main>
+          <p class="weather-app-details"> <span id="time">Tuesday 14:49</span>, <span id="description"> scattered
+              clouds</span> <br>
+            Humidity: <strong><span id="humidity">65%</span></strong></span> Wind: <strong><span id="wind">10
+                km/h</span></strong></p>
+        </div>
+        <div class="weather-app-temperature-container">
+          
+            <div id="icon"
+            >
 
-  <footer>
-    <p>Created by <a href="https://github.com/AngellaMirembe">Angella</a> is <a
-        href="https://github.com/AngellaMirembe/Skyly">open-sourced on GitHub</a> and <a
-        href="https://skyly96.netlify.app/">hosted on Netlify</a></p>
-  </footer>
+            </div>
+          
+          <div class="weather-app-temperature-value" id="temperature">12</div>
+          <div class="weather-app-unit">&deg;C</div>
+
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p>Created by <a href="https://github.com/AngellaMirembe">Angella</a> is <a
+          href="https://github.com/AngellaMirembe/Skyly">open-sourced on GitHub</a> and <a
+          href="https://skyly96.netlify.app/">hosted on Netlify</a></p>
+    </footer>
   </div>
 
   <script src="src/index.js"></script>
